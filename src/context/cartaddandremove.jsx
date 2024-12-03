@@ -9,7 +9,7 @@ const addToCart = (id, name, price) => {
     localStorage.setItem('cartItem', JSON.stringify(data));
   
     console.log(data);
-    alert("Item added to cart");
+    // alert("Item added to cart");
   };
   
   const emptyCart = () => {
