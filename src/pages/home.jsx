@@ -60,7 +60,7 @@ const Home = () => {
                                 name={category.name}
                                 price={category.price} 
                                 image={category.strCategoryThumb}
-                                description={category.description}
+                                description={category.ingredients}
                             />
                         ))
                     ) : (
