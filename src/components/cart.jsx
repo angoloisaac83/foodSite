@@ -11,6 +11,9 @@ const Cart = () => {
 
     return (
         <div className="cart flex flex-col items-center justify-center w-full h-fit py-5 px-5">
+          <head>
+            <title>Pokaribs - Cart</title>
+          </head>
             <h2 className="text-2xl text-center py-5">Your Cart</h2>
             <br />
             <p>Total Items: {totalItems.length}</p>
