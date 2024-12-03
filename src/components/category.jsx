@@ -30,6 +30,9 @@ const App = () => {
   const renderContent = () => {
     return (
       <div className="grid px-5 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+          <head>
+            <title>Pokaribs - Menu - Categories</title>
+          </head>
         {Drinks[activeTab].map((item, index) => (
           <div
             key={item.id || index} // Use item.id if available, fallback to index
