@@ -37,15 +37,34 @@ const Home = () => {
           <head>
             <title>Pokaribs-Home</title>
           </head>
-          <header className='w-full flex items-center text-white justify-center h-screen bg-[url("./assets/pexels-donaldtong94-189296.jpg")] bg-cover'>
-                <div className='w-full flex flex-col items-center justify-center bg-[rgba(0,0,0,0.34)] h-full gap-7 text-center'>
-                  <h1 className='text-[45px] mobile:text-[35px] font-bold mobile:px-3'>Pokaribs Native Kitchen & Lounge</h1>
-                  <p className='w-[45%] mobile:w-[95%] mobile:text-[18px] pb-[20px] text-xl font-meduim'>
-                    Pokaribs Native Kitchen & Lounge is a culinary gem that invites tourists to induldge in the rich flavors of Nigerian
-                  </p>
-                  <button className='bg-black text-white hover:text-yellow-500 px-[15px] py-[7px] text-[19px] rounded-md'><Link to="/menu">Start Odering</Link></button>
-                </div>
-          </header>
+    <header className='w-full h-screen relative flex items-center justify-center text-white'>
+      {/* Video Background */}
+      <video
+        autoPlay
+        loop
+        muted
+        className='absolute top-0 left-0 w-full h-full object-cover z-[-1]'
+      >
+        <source src="./assets/IMG_9271.MP4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video> 
+
+      {/* Overlay Content */}
+      <div className='w-full flex flex-col items-center justify-center bg-[rgba(0,0,0,0.34)] h-full gap-7 text-center'>
+        <h1 className='text-[45px] mobile:text-[35px] font-bold mobile:px-3'>
+          Pokaribs Native Kitchen & Lounge
+        </h1>
+        <p className='w-[45%] mobile:w-[95%] mobile:text-[18px] pb-[20px] text-xl font-medium'>
+          Pokaribs Native Kitchen & Lounge is a culinary gem that invites tourists to indulge in the rich flavors of Nigeria.
+        </p>
+        <button className='bg-black text-white hover:text-yellow-500 px-[15px] py-[7px] text-[19px] rounded-md'>
+          <Link to="/menu" className="no-underline text-white hover:text-yellow-500">
+            Start Ordering
+          </Link>
+        </button>
+      </div>
+    </header>
+
         <div className="container mx-auto w-full h-fit p-6">
             <h2 className="text-3xl font-bold text-center mb-8">Our Menu</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
